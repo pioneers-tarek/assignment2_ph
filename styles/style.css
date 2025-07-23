@@ -40,6 +40,12 @@ body {
   color: #333;
   font-weight: 500;
 }
+#cart a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
 
 .nav-links a:hover,
 .nav-links a.cart {
@@ -468,6 +474,9 @@ body {
 /* responsive */
 @media screen and (max-width:576px){
 
+    #cart{
+        display: flex;
+    }
     .nav-links a{
         display: none;
     }
@@ -561,10 +570,8 @@ body {
     padding: 20px;
   }
 
-  .image-side,
   .text-side {
-    width: 100%;
-  }
+    display: none;
 
   .image-side {
     order: 1;
@@ -644,9 +651,9 @@ body {
   .image-side {
     width: 100%;
   }
-.text-side{
+/* .text-side{
     display: grid;
-}
+} */
   .product-grid {
     grid-template-columns: repeat(2,1fr);
   }
