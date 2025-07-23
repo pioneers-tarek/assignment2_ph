@@ -237,7 +237,7 @@ body {
   max-width: 1140px;
   max-height: 423px;
   text-align: center;
-  margin: auto;
+  margin: 0 auto;
   background-color: #f5faff;
   font-family: Arial, sans-serif;
 }
@@ -316,17 +316,15 @@ body {
 
 /* join section */
 .subscribe-section {
-    background-image: url(../assets/news-letter-bg.png);
-    
-    
-  display: grid;
+    background-image: url(../assets/news-letter-bg.png);     
   align-items: center;
+  padding: 120px 40px;
   justify-content: center;
-  position: relative;
+  gap: 400px;
   color: white;
   max-width: 1440px;
   max-height: 533px;
-  margin: auto;
+  margin: 0 auto;
 }
 
 .subscribe-overlay {
