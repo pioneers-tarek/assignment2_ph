@@ -234,10 +234,10 @@ body {
 /* new section */
 .deals-section {
   padding: 40px 20px;
-  max-width: 1140px;
+  max-width: 1640px;
   max-height: 423px;
   text-align: center;
-  margin: 0 auto;
+  margin: 20px auto;
   background-color: #f5faff;
   font-family: Arial, sans-serif;
 }
@@ -265,14 +265,16 @@ body {
 }
 
 .deals-grid {
-  display: flex;
+   display: flex;
   flex-wrap: wrap;
+  /* display: grid;
+  grid-template-columns: repeat(2,1fr); */
   gap: 20px;
   justify-content: center;
 }
 
 .deal-card {
-  background-size: cover;
+  /* background-size: cover;
   background-position: center;
   border-radius: 8px;
   width: 300px;
@@ -282,6 +284,20 @@ body {
   position: relative;
   overflow: hidden;
   display: flex;
+  align-items: center;
+  justify-content: center; */
+
+    background-size: cover;
+  background-position: center;
+  border-radius: 8px;
+  /* display: grid; */
+  display: flex;
+  text-align: center;
+  /* grid-template-columns: repeat(2,1fr); */
+  width: 400px;
+  height: 200px;
+   position: relative;
+  overflow: hidden; 
   align-items: center;
   justify-content: center;
 }
@@ -315,8 +331,8 @@ body {
 
 
 /* join section */
-.subscribe-section {
-    background-image: url(../assets/news-letter-bg.png);     
+.subscribe-section { 
+    background-image: url(../assets/news-letter-bg.png);   
   align-items: center;
   padding: 120px 40px;
   justify-content: center;
@@ -324,10 +340,11 @@ body {
   color: white;
   max-width: 1440px;
   max-height: 533px;
-  margin: 0 auto;
+  margin: 20px auto;
 }
 
 .subscribe-overlay {
+    background-size: auto;
   background-color: rgba(0, 0, 0, 0.4); 
   padding: 40px;
   text-align: center;
@@ -446,3 +463,240 @@ body {
 .footer-social img:hover {
   filter: none;
 }
+
+
+/* responsive */
+@media screen and (max-width:576px){
+
+    .nav-links a{
+        display: none;
+    }
+
+    .hero .text-content{
+        order: 2;
+
+    }
+    .products-section{
+        display: grid;
+    }
+    
+  .image-content {
+    width: 393px;
+    height: 245px;
+  }
+
+
+
+
+
+  
+/* Default style for large screens */
+.deals-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 80px;
+  background-color: #fff4e6;
+}
+
+.deals-section img {
+  width: 400px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.deals-section .text {
+  max-width: 500px;
+}
+
+.deals-section .text h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.deals-section .text p {
+  font-size: 16px;
+  color: #555;
+}
+.section-header h2 {
+    font-size: 24px;
+  }
+
+  .section-header p {
+    font-size: 14px;
+    padding: 0 10px;
+  }
+
+  .deals-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .deal-card,
+  .deal-card.wide {
+    width: 100%;
+    max-width: 90%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+  }
+
+  .card-content {
+    padding: 10px 15px;
+  }
+
+  .card-content h3 {
+    font-size: 16px;
+  }
+
+  .card-content a {
+    font-size: 14px;
+    padding: 5px 10px;
+  }
+
+.deals-section{
+    display: none;
+}
+ .trusted-section {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .image-side,
+  .text-side {
+    width: 100%;
+  }
+
+  .image-side {
+    order: 1;
+  }
+
+  .text-side {
+    order: 2;
+    text-align: center;
+  }
+
+  .text-side h2 {
+    font-size: 24px;
+  }
+
+  .text-side li {
+    font-size: 15px;
+    text-align: left;
+  }
+
+  .badge {
+    width: 60px;
+    top: 10px;
+    left: 10px;
+    transform: none;
+  }
+}
+
+.subscribe-overlay h2 {
+    font-size: 22px;
+  }
+
+  .subscribe-form {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .subscribe-form input[type="email"],
+  .subscribe-form button {
+    width: 100%;
+    max-width: 90%;
+    font-size: 15px;
+  }
+
+  .subscribe-form button {
+    margin-top: 10px;
+  }
+
+
+
+/* .trusted-section{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+}
+.deals-grid{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+} */
+
+.subscribe-section{
+    display: grid;
+}
+  /* Example: make badge image smaller */
+  .badge {
+    width: 60px;
+    top: 10px;
+    left: 10px;
+    transform: none;
+  }
+
+  /* Optional: Stack sections vertically */
+  .trusted-section,
+  .hero {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .image-side {
+    width: 100%;
+  }
+.text-side{
+    display: grid;
+}
+  .product-grid {
+    grid-template-columns: repeat(2,1fr);
+  }
+
+  /* === All Images Responsive === */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* === Image Gallery Section === */
+.image-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  justify-content: center;
+}
+
+.image-gallery img {
+  width: 30%;
+  border-radius: 8px;
+}
+
+
+
+  /* Stack footer columns vertically */
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .footer-social {
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .footer-left,
+  .footer-links,
+  .footer-social {
+    flex: 1 1 100%;
+  }
+
+
+
