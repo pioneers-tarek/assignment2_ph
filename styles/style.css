@@ -273,33 +273,18 @@ body {
 .deals-grid {
    display: flex;
   flex-wrap: wrap;
-  /* display: grid;
-  grid-template-columns: repeat(2,1fr); */
   gap: 20px;
   justify-content: center;
 }
 
 .deal-card {
-  /* background-size: cover;
-  background-position: center;
-  border-radius: 8px;
-  width: 300px;
-    display: grid;
-    grid-template-rows: repeat(2, 1fr);
-  height: 180px;
-  position: relative;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center; */
+
 
     background-size: cover;
   background-position: center;
   border-radius: 8px;
-  /* display: grid; */
   display: flex;
   text-align: center;
-  /* grid-template-columns: repeat(2,1fr); */
   width: 400px;
   height: 200px;
    position: relative;
@@ -707,3 +692,4 @@ img {
 
 
 
+}
